@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li class="verdura">Lechuga</li>
+        <li class="verdura">Tomates</li>
+        <li class="carne">Pollo</li>
+        <li class="verdura">Remolacha</li>
+        <li class="carne">Ternera</li>
+        <li class="legrumbre">Garbanzos</li>
+        <li class="legrumbre">Lentejas</li>
+        <li class="carne">Cerdo</li>
+        <li class="verdura">Berenjena</li>
+        <li class="legrumbre">Habas</li>
+    </ul>
+
+
+    <script>
+        let lista = document.querySelectorAll("li");
+
+        for(let food of lista){
+            //Ejercicio 15
+            if(food.getAttribute("class")=="verdura"){
+                food.setAttribute("class","hortaliza");
+            }
+            //Ejercicio 16
+            if(food.getAttribute("class")=="carne"){
+                food.removeAttribute("class");
+            }
+
+            //Ejercicio 14
+            console.log(food.getAttribute("class")+"-->"+food.innerHTML);
+        }
+
+
+    
+    </script>
+</body>
+</html>
